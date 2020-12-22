@@ -1,0 +1,49 @@
+.component {
+  width: 50%;
+  border: 1px solid burlywood;
+  font-size: 2rem; /* 컴포넌트 전체의 2rem */
+}
+
+.title {
+  padding: 0.5em; /* 현재 폰트사이즈의 절반이 패딩 */
+  background-color: burlywood;
+}
+
+.contents {
+  font-size: 1rem; 
+  padding: 0.5em; /* 현재 폰트사이즈의 절반이 패딩 */
+}
+
+  @media screen and (max-width: 780px){
+    /** 컴포넌트 사이즈가 780px보다 작아지면 component의 폰트사이즈 변경*/
+    .component {
+      font-size: 1.5rem;
+    }
+  }
+
+
+.container {
+  display: flex;
+  padding: 2em;
+}
+.component2 {
+  border: 1px solid burlywood;
+  margin: 1em;
+}
+
+.title2 {
+  font-size: 1.5rem;
+  padding: 1em;
+  background-color: burlywood;
+}
+
+.contents2 {
+  font-size: 1.12rem;
+  padding: 16px;
+}
+
+@media screen and (max-width: 48rem) {
+  .container {
+    flex-direction: column;
+  }
+}

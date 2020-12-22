@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반응형 CSS 단위</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    :: 절대적이냐 Absoulte ::<br />
+    px: container의 사이즈가 변경되어도 컨텐츠가 그대로 유지된다. 대신 %를
+    사용하면 부모의 사이즈에 따라 변경된다.
+    <br /><br />
+
+    ::상대적이냐 relative::<br />
+
+    <p>em, rem: font에 활용</p>
+    em: 부모의 폰트사이즈에 상대적으로 폰트사이즈가 계산된다 / 1em = 16px; ex)
+    <div class="parent" style="font-size: 3em">
+      Parent (16px*3=48px)
+      <div class="child" style="font-size: 0.5em">Child (48px*0.5=24px)</div>
+    </div>
+    <br /><br />
+
+    <p>em demo: 폰트사이즈를 즉각적으로 계산하기 어려움</p>
+    <div class="level1" style="font-size: 2em">
+      <h6>level 1 (21px)</h6>
+      <div class="level2" style="font-size: 2em">
+        <h6>level 2 (42px)</h6>
+        <div class="level3" style="font-size: 2em">
+          <h6>level 3 (84px)</h6>
+        </div>
+      </div>
+    </div>
+
+    <p>em demo2(padding): padding을 em으로 설정하여 폰트 크기에 따라감</p>
+    <h1
+      class="emdemo2"
+      style="
+        display: inline-block;
+        font-size: 2em;
+        background-color: orange;
+        padding: 1em;
+      "
+    >
+      Hello world!!
+    </h1>
+
+    <p>rem demo: level1에서 사용하는 size에 따라 모든 자식들이 같음</p>
+    <div class="level1" style="font-size: 2rem">
+      <h6>level 1 (21px)</h6>
+      <div class="level2" style="font-size: 2rem">
+        <h6>level 2 (21px)</h6>
+        <div class="level3" style="font-size: 2rem">
+          <h6>level 3 (21px)</h6>
+        </div>
+      </div>
+    </div>
+
+    rem: r(root) 부모가 아닌 최상위 루트 폰트사이즈에 영향받음 <br />
+    <div class="parent" style="font-size: 3rem">
+      Parent (16px*3=48px)
+      <div class="child" style="font-size: 0.5rem">
+        Child (루트20px*0.5=10px)
+      </div>
+    </div>
+    <br />
+
+    <p>rem demo2</p>
+    <div class="component">
+      <div class="title">Master Front-end!</div>
+      <div class="contents">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book.
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="component2">
+        <div class="title2">Master Front-end!</div>
+        <div class="contents2">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
+        </div>
+      </div>
+
+      <div class="component2">
+        <div class="title2">Master Front-end!</div>
+        <div class="contents2">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
+        </div>
+      </div>
+    </div>
+
+    <p>box 렌더링</p>
+    vw: viewport width 뷰포트 너비 <br />
+    ex) 100vw : 뷰포트(브라우져) 너비의 100% 를 사용<br />
+    50vw : 뷰포트(브라우져) 너비의 50%를 사용 <br /><br />
+    vh: viewport height 뷰포트 높이 <br />
+    ex) 100vh : 뷰포트(브라우져) 높이의 100% 를 사용<br />
+    50vh : 뷰포트(브라우져) 너비의 50%를 사용<br /><br />
+
+    %: 부모요소의 상대적으로 계산되어진다. <br />
+  </body>
+</html>
