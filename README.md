@@ -178,57 +178,52 @@ ___
   }
 }
 ```
-<html>
-  <head>
-    <style>
-      .container {
-        display: flex;
-        padding: 2em;
-      }
-      .component2 {
-        border: 1px solid burlywood;
-        margin: 1em;
-      }
-      .title2 {
-        font-size: 1.5rem;
-        padding: 1em;
-        background-color: burlywood;
-      }
-      .contents2 {
-        font-size: 1.12rem;
-        padding: 16px;
-      }
-      @media screen and (max-width: 48rem) {
-        .container {
-          flex-direction: column;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="component2">
-        <div class="title2">Master Front-end!</div>
-        <div class="contents2">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
-        </div>
-      </div>
-      <div class="component2">
-        <div class="title2">Master Front-end!</div>
-        <div class="contents2">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
-        </div>
-      </div>
-    </div>
-  </body>
-  </html>
 
+<div class="container">
+  <div class="component2">
+    <div class="title2">Master Front-end!</div>
+    <div class="contents2">
+      Lorem Ipsum is simply dummy text of the printing and typesetting
+      industry. Lorem Ipsum has been the industry's standard dummy text ever
+      since the 1500s, when an unknown printer took a galley of type and
+      scrambled it to make a type specimen book.
+    </div>
+  </div>
+  <div class="component2">
+    <div class="title2">Master Front-end!</div>
+    <div class="contents2">
+      Lorem Ipsum is simply dummy text of the printing and typesetting
+      industry. Lorem Ipsum has been the industry's standard dummy text ever
+      since the 1500s, when an unknown printer took a galley of type and
+      scrambled it to make a type specimen book.
+    </div>
+  </div>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    padding: 2em;
+  }
+  .component2 {
+    border: 1px solid burlywood;
+    margin: 1em;
+  }
+  .title2 {
+    font-size: 1.5rem;
+    padding: 1em;
+    background-color: burlywood;
+  }
+  .contents2 {
+    font-size: 1.12rem;
+    padding: 16px;
+  }
+  @media screen and (max-width: 48rem) {
+    .container {
+      flex-direction: column;
+    }
+  }
+</style>
 ___
 
 ## vw, vh:
