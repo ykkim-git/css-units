@@ -1,5 +1,5 @@
 # css-units
-# CSS 단위를 알아보자
+# 반응형 CSS 단위를 알아보자
 
 ![em & rem](emrem.png)
 by dreamcoding ellie
