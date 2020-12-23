@@ -46,6 +46,16 @@
       Hello world!!
     </h1>
 
+    
+    rem: r(root) 부모가 아닌 최상위 루트 폰트사이즈에 영향받음 <br />
+    <div class="parent" style="font-size: 3rem">
+      Parent (16px*3=48px)
+      <div class="child" style="font-size: 0.5rem">
+        Child (루트20px*0.5=10px)
+      </div>
+    </div>
+    <br />
+
     <p>rem demo: level1에서 사용하는 size에 따라 모든 자식들이 같음</p>
     <div class="level1" style="font-size: 2rem">
       <h6>level 1 (21px)</h6>
@@ -57,14 +67,7 @@
       </div>
     </div>
 
-    rem: r(root) 부모가 아닌 최상위 루트 폰트사이즈에 영향받음 <br />
-    <div class="parent" style="font-size: 3rem">
-      Parent (16px*3=48px)
-      <div class="child" style="font-size: 0.5rem">
-        Child (루트20px*0.5=10px)
-      </div>
-    </div>
-    <br />
+
 
     <p>rem demo2</p>
     <div class="component">
